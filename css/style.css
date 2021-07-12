@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
     padding: 0;
     margin: 0;
 }
 
 .body {
-    background: url("../bg.jpg");
+    background: url("../img/bg.jpg");
     min-height: 100vh;
     background-size: 110vw 100vh;
     background-repeat: no-repeat;
@@ -13,8 +14,27 @@
     align-items: center;
 }
 
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 250px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+#HiscoreBox {
+    position: absolute;
+    top: 50px;
+    right: 160px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
 #board {
     background: linear-gradient(rgb(97, 241, 97), rgb(236, 236, 98));
+    margin-right: 300px;
     width: 98vmin;
     height: 92vmin;
     border: 2px solid black;
@@ -24,13 +44,21 @@
 }
 
 .head {
-    background-color: black;
+    background: linear-gradient(purple, rgb(12, 6, 6));
+    border: .25vmin solid black;
+    border-radius: 12px;
+    transform: scale(1.20);
 }
 
 .food {
     background-color: red;
+    border: .25vmin solid black;
+    border-radius: 5px;
 }
 
 .snake {
-    background-color: green;
+    background: linear-gradient( black, yellow);
+    border: 2px solid black;
+    border-radius: 10px;
+    transform: scale(1.02);
 }
