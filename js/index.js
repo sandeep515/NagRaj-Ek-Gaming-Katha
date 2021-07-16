@@ -48,7 +48,6 @@ function isCollide(snake) {
 
         return true;
     }
-
 }
 
 
@@ -60,6 +59,7 @@ function gameEngine() {
         musicSound.pause();
         inputDir = { x: 0, y: 0 };
         alert("🐍 GAME OVER 🐍");
+        location.reload();
         snakeArr = [
             { x: 38, y: 38 }
         ];
